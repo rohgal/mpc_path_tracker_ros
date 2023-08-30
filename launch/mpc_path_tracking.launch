@@ -1,0 +1,5 @@
+<launch>
+    <node name="MPC_Node" pkg="mpc_path_tracker" type="mpc_path_tracker_node" output="screen" >
+        <rosparam file="$(find mpc_path_tracker)/params/mpc_path_tracker_ros_params.yaml" command="load" />
+    </node>
+</launch>
