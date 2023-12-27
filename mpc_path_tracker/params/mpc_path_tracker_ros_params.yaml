@@ -4,23 +4,21 @@ debug_info: false
 delay_mode: false
 max_speed: 1.2 # unit: m/s 
 waypoints_dist: -1.0 # unit: m, set < 0 means computed by node
-path_length: 100.0 # unit: m
-goal_radius: 0.3 # unit: m
+goal_radius: 0.21 # unit: m
 controller_freq: 30
 
 # Parameter for MPC solver
 mpc_steps: 20.0
 mpc_ref_cte: 0.0
-mpc_ref_vel: 1.0
 mpc_ref_etheta: 0.0
-mpc_w_cte: 3000.0
+mpc_w_cte: 1000.0
 mpc_w_etheta: 1000.0
 mpc_w_vel: 2000.0
 mpc_w_angvel: 0.0
-mpc_w_angvel_d: 10.0
+mpc_w_angvel_d: 20.0
 mpc_w_accel: 10.0
 mpc_w_accel_d: 10.0
-mpc_max_angvel: 1.0
+mpc_max_angvel: 2.0
 mpc_max_throttle: 0.5 # Maximal throttle accel
 mpc_bound_value: 1.0e3 # Bound value for other variables
 
